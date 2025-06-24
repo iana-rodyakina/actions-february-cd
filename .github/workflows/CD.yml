@@ -39,6 +39,6 @@ jobs:
 
     - name: Install app
       run: |
-        helm upgrade --install flask ./flask \
+        helm upgrade --install flask ./flask 
         --set deployment.image.repository=${{ github.event.inputs.image }} \
         --set deployment.image.tag=${{ github.event.inputs.tag }}
